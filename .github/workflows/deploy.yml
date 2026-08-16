@@ -1,0 +1,51 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # decktape recorre el deck y guarda un PDF. Hace falta servirlo por HTTP
+      # porque las slides se cargan desde slides.md con fetch. El parámetro
+      # ?poster cambia los GIF por un frame representativo y esconde el botón.
+      # --chrome-arg=--no-sandbox hace falta porque los runners de ubuntu-24.04
+      # bloquean los user namespaces sin privilegios y Chromium no puede crear
+      # su sandbox.
+      # Ghostscript baja el PDF de ~23 MB a ~2 MB (Cloudflare Pages corta en 25 MB).
+      - name: Build the PDF
+        run: |
+          python3 -m http.server 8000 >/dev/null 2>&1 &
+          npx --yes wait-on -t 30000 http://localhost:8000/index.html
+          npx --yes decktape@3.14.0 reveal \
+            --chrome-arg=--no-sandbox \
+            --size 1280x720 \
+            --pause 1200 \
+            "http://localhost:8000/?poster" \
+            deck-full.pdf
+          command -v gs >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ghostscript; }
+          gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite \
+            -dPDFSETTINGS=/ebook -dDetectDuplicateImages=true \
+            -sOutputFile=sotm-ohm-2026.pdf deck-full.pdf
+          rm deck-full.pdf
+          test -s sotm-ohm-2026.pdf
+          ls -lh sotm-ohm-2026.pdf
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy . --project-name=sotm-ohm-2026

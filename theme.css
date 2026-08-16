@@ -1,0 +1,488 @@
+/* ============================================================
+   MORELIA · OpenHistoricalMap
+   Tema "cartografía histórica / cantera rosa"
+   Display: Fraunces · Texto: Hanken Grotesk · Mono: IBM Plex Mono
+   ============================================================ */
+
+/* ---------- Fuentes locales (offline) ---------- */
+@font-face{
+  font-family:'Fraunces';
+  src:url('fonts/fraunces-wght.woff2') format('woff2');
+  font-weight:100 900; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'Fraunces';
+  src:url('fonts/fraunces-italic-wght.woff2') format('woff2');
+  font-weight:100 900; font-style:italic; font-display:swap;
+}
+@font-face{
+  font-family:'Hanken Grotesk';
+  src:url('fonts/hanken-wght.woff2') format('woff2');
+  font-weight:100 900; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'IBM Plex Mono';
+  src:url('fonts/plexmono-400.woff2') format('woff2');
+  font-weight:400; font-style:normal; font-display:swap;
+}
+@font-face{
+  font-family:'IBM Plex Mono';
+  src:url('fonts/plexmono-600.woff2') format('woff2');
+  font-weight:600; font-style:normal; font-display:swap;
+}
+
+/* ---------- Paleta y variables ---------- */
+:root{
+  --paper:#FFFFFF;        /* fondo blanco */
+  --paper-2:#FAF8F4;      /* tarjeta clara */
+  --paper-edge:#E4DED2;
+  --ink:#211B13;          /* casi negro cálido */
+  --ink-soft:#574B39;
+  --ink-faint:#8A7A60;
+
+  --rosa:#BC6076;         /* cantera rosa */
+  --rosa-deep:#8C384E;
+  --rosa-tint:#E7CBCD;
+  --teal:#2C8A7B;         /* verde OHM */
+  --teal-deep:#1C5E54;
+  --gold:#B5853C;         /* sepia / línea de mapa */
+
+  --charcoal:#16120D;     /* fondo oscuro */
+  --charcoal-2:#221C14;
+  --paper-on-dark:#EFE5D2;
+
+  --chrome:rgba(120,106,82,.72);
+  --rule:rgba(108,90,58,.32);
+
+  --font-display:'Fraunces',Georgia,serif;
+  --font-body:'Hanken Grotesk',system-ui,sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+
+  --maxw:1180px;
+}
+
+/* ---------- Texturas de fondo ---------- */
+.reveal-viewport{
+  background-color:var(--paper);
+  background-image:
+    /* grano de papel */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E"),
+    /* graticule (retícula de mapa) */
+    repeating-linear-gradient(0deg, transparent 0 79px, var(--rule) 79px 80px),
+    repeating-linear-gradient(90deg, transparent 0 79px, var(--rule) 79px 80px),
+    /* viñeta cálida */
+    var(--paper);
+  background-blend-mode:multiply,normal,normal,normal;
+}
+
+/* ---------- Base reveal ---------- */
+.reveal{
+  font-family:var(--font-body);
+  font-weight:380;
+  font-size:34px;
+  color:var(--ink);
+  letter-spacing:.005em;
+  -webkit-font-smoothing:antialiased;
+}
+.reveal .slides{ text-align:left; }
+.reveal .slides section{
+  height:100%;
+  padding:0 70px;
+  box-sizing:border-box;
+  display:flex; flex-direction:column; justify-content:center;
+}
+.reveal .slides section>*{ width:100%; max-width:var(--maxw); }
+
+.reveal h1,.reveal h2,.reveal h3{
+  font-family:var(--font-display);
+  color:var(--ink);
+  text-transform:none;
+  letter-spacing:-.018em;
+  line-height:.98;
+  margin:0 0 .35em;
+  text-shadow:none;
+  font-weight:560;
+}
+.reveal h1{ font-size:2.55em; }
+.reveal h2{ font-size:1.92em; }
+.reveal h3{ font-size:1.28em; font-weight:600; }
+.reveal p{ line-height:1.42; margin:0 0 .7em; }
+.reveal strong{ color:var(--rosa-deep); font-weight:680; }
+.reveal em{ font-style:italic; }
+.reveal a{ color:var(--teal-deep); text-decoration:none; border-bottom:1px solid var(--teal); }
+
+.reveal ul,.reveal ol{ margin:.2em 0 .2em 1.1em; }
+.reveal li{ line-height:1.3; margin:.3em 0; padding-left:.25em; }
+.reveal li::marker{ color:var(--rosa); }
+
+/* ---------- Cromática fija (marco de hoja de mapa) ---------- */
+.deck-chrome{ position:fixed; inset:0; z-index:6; pointer-events:none; }
+.deck-chrome .frame{
+  position:absolute; inset:18px;
+  border:1px solid var(--chrome);
+  box-shadow:inset 0 0 0 4px transparent, inset 0 0 0 5px rgba(120,106,82,.18);
+}
+.deck-chrome .tick{ position:absolute; width:13px; height:13px; border:1px solid var(--chrome); }
+.deck-chrome .tick.tl{ left:12px; top:12px; border-right:0; border-bottom:0;}
+.deck-chrome .tick.tr{ right:12px; top:12px; border-left:0; border-bottom:0;}
+.deck-chrome .tick.bl{ left:12px; bottom:12px; border-right:0; border-top:0;}
+.deck-chrome .tick.br{ right:12px; bottom:12px; border-left:0; border-top:0;}
+.deck-chrome .meta{
+  position:absolute; font-family:var(--font-mono); font-size:11px;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--chrome);
+}
+.deck-chrome .meta.tl{ left:34px; top:26px; }
+.deck-chrome .meta.tr{ right:34px; top:26px; }
+.deck-chrome .meta.bl{ left:34px; bottom:24px; }
+.deck-chrome .meta.br{ right:34px; bottom:24px; }
+
+/* slides oscuras → cromática clara */
+.reveal section.dark{ color:var(--paper-on-dark); }
+.reveal section.dark h1,
+.reveal section.dark h2,
+.reveal section.dark h3{ color:var(--paper-on-dark); }
+.reveal section.dark strong{ color:#E89BAA; }
+
+/* fondo oscuro de slide */
+.reveal .backgrounds .slide-background.dark-bg{
+  background-color:var(--charcoal);
+}
+
+/* ---------- Componentes ---------- */
+
+/* ---------- Guardas y piezas que siguen en uso ---------- */
+/* evita que imágenes anchas desborden las grillas (reveal escalaría la slide) */
+.reveal .slides section img{ max-width:100%; height:auto; }
+
+/* QR del cierre (el HTML de los QR vive en slides.md) */
+.qr{ background:#fff; padding:14px; border-radius:6px; display:inline-block; border:1px solid var(--paper-edge); box-shadow:0 14px 30px -22px rgba(0,0,0,.45); }
+.qr img,.qr svg{ display:block; width:200px; height:200px; }
+.qr.hl{ outline:3px solid var(--teal); outline-offset:3px; }
+.qr-row{ display:flex; justify-content:center; gap:2.6em; margin-top:1em; }
+.qr-item{ display:flex; flex-direction:column; align-items:center; gap:.6em; }
+.qr-label{ font-family:var(--font-mono); font-size:.6em; letter-spacing:.04em; line-height:1.5; text-align:center; color:var(--ink-soft); }
+.qr-label b{ color:var(--rosa-deep); }
+
+/* botón de descarga del PDF (se oculta al exportar y al imprimir) */
+.pdf-btn{
+  position:fixed; left:34px; bottom:52px; z-index:8;
+  font-family:var(--font-mono); font-size:11px; font-weight:600;
+  letter-spacing:.14em; text-transform:uppercase; text-decoration:none;
+  color:var(--chrome); border:1px solid var(--chrome); border-bottom-color:var(--chrome);
+  padding:.5em .9em; border-radius:3px; opacity:.55;
+  transition:opacity .2s, color .2s, border-color .2s;
+}
+.pdf-btn:hover{ opacity:1; color:var(--rosa-deep); border-color:var(--rosa); }
+.exporting .pdf-btn{ display:none; }
+/* Chrome pinta las sombras de las celdas de tabla como bandas sólidas al exportar */
+.exporting .reveal section.md.imgrid th{ box-shadow:none; }
+
+/* ---------- Animación de entrada ---------- */
+@keyframes riseIn{ from{opacity:0; transform:translateY(22px);} to{opacity:1; transform:none;} }
+/* variante para el pie de foto, que ya está centrado con translateX(-50%) */
+@keyframes riseInCap{ from{opacity:0; transform:translate(-50%,22px);} to{opacity:1; transform:translateX(-50%);} }
+
+/* progreso reveal en rosa */
+.reveal .progress{ color:var(--rosa); height:4px; }
+.reveal .progress span{ background:var(--rosa); }
+.reveal .controls{ color:var(--rosa-deep); }
+
+/* impresión / pdf */
+@media print{
+  .reveal-viewport{ background:var(--paper) !important; }
+  .pdf-btn{ display:none; }
+}
+
+/* ============================================================
+   SLIDES EN MARKDOWN  (todo el contenido vive en slides.md)
+   Cada slide empieza con <!-- .slide: class="md ..." -->
+   y estas reglas traducen el markdown a los componentes del deck:
+
+     ###        kicker            #  / ##   títulos
+     texto      párrafo lead      `texto`   pastilla / tag
+     - item     tarjeta (class "facts")
+     tabla      grilla de imágenes (class "imgrid") o personas ("speakers")
+     > cita     pie de foto (class "bleed") o cita grande (class "quote")
+     párrafo después de una lista o tabla → nota pequeña al pie
+   ============================================================ */
+
+/* ---- básicos ---- */
+.reveal section.md > h3{
+  font-family:var(--font-mono); font-size:.54em; font-weight:600;
+  letter-spacing:.26em; text-transform:uppercase; color:var(--rosa-deep);
+  display:inline-flex; align-items:center; gap:.7em; margin-bottom:.7em;
+}
+.reveal section.md > h3::before{ content:""; width:34px; height:2px; background:var(--rosa); display:inline-block; }
+.reveal section.dark.md > h3{ color:var(--rosa); }
+.reveal section.md > h1{ font-size:2.6em; margin-top:.3em; }
+.reveal section.md > h2{ margin-top:.2em; }
+.reveal section.md > p{ font-size:1.06em; color:var(--ink-soft); max-width:880px; }
+.reveal section.dark.md > p{ color:#D8CBB4; }
+
+/* párrafo después de una lista o tabla = nota pequeña al pie */
+.reveal section.md > ul + p,
+.reveal section.md > table + p{ margin-top:.6em; font-size:.76em; color:var(--ink-faint); max-width:none; }
+.reveal section.dark.md > ul + p,
+.reveal section.dark.md > table + p{ color:#DDF1EC; }
+.reveal section.md > p.todo,
+.reveal section.dark.md > p.todo{
+  margin-top:.7em; color:#FF4D4D; font-family:var(--font-mono);
+  font-size:1.1em; font-weight:600; letter-spacing:.06em;
+}
+
+/* `texto` = pastilla */
+.reveal section.md code{
+  font-family:var(--font-mono); font-size:.7em; font-weight:600;
+  letter-spacing:.02em; padding:.18em .55em; border-radius:3px;
+  background:var(--rosa-tint); color:var(--rosa-deep);
+  border:1px solid rgba(140,56,78,.28); white-space:nowrap;
+}
+
+/* ---- portada (class "cover") ---- */
+.reveal section.md.cover > h1{ font-size:3.05em; font-weight:600; line-height:.96; margin-top:0; }
+.reveal section.md.cover > p:nth-of-type(1){
+  font-family:var(--font-display); font-style:italic; font-size:1.42em;
+  color:var(--ink); line-height:1.14; max-width:1010px; margin-top:.12em;
+}
+.reveal section.md.cover > p:nth-of-type(2){
+  font-family:var(--font-mono); font-size:.62em; letter-spacing:.04em;
+  color:var(--ink-soft); line-height:1.7; margin-bottom:.2em;
+}
+.reveal section.md.cover > p:nth-of-type(2)::before{
+  content:""; display:block; width:80px; height:2px; background:var(--rosa); margin:1.5em 0 1em;
+}
+.reveal section.md.cover > p:nth-of-type(2) strong{ color:var(--rosa-deep); font-weight:600; }
+.reveal section.md.cover > p:nth-of-type(3){
+  font-family:var(--font-mono); font-size:.62em; letter-spacing:.04em; color:var(--ink-faint);
+}
+
+/* ---- presentadores (class "speakers"): tabla de 2 columnas ---- */
+.reveal section.md.speakers{ text-align:center; }
+.reveal section.md.speakers > h3{ justify-content:center; }
+.reveal section.md.speakers > table{ width:auto; margin:.6em auto 0; border-collapse:collapse; }
+.reveal section.md.speakers th,
+.reveal section.md.speakers td{ border:0; padding:0 35px; text-align:center; font-weight:400; }
+.reveal section.md.speakers img{
+  width:230px; height:230px; object-fit:cover; border-radius:50%;
+  border:4px solid var(--paper-edge); box-shadow:0 18px 40px -26px rgba(33,20,8,.45);
+}
+.reveal section.md.speakers tbody tr:first-child td{
+  font-family:var(--font-display); font-size:1.28em; padding-top:.5em;
+}
+.reveal section.md.speakers tbody tr:first-child strong{ color:var(--ink); font-weight:560; }
+.reveal section.md.speakers tbody tr:last-child td{
+  font-family:var(--font-mono); font-size:.62em; letter-spacing:.06em;
+  color:var(--ink-faint); line-height:1.5; padding-top:.1em;
+}
+
+/* ---- tarjetas de datos (class "facts", + "g2" o "g3") ---- */
+.reveal section.md.facts > ul{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:16px;
+  max-width:var(--maxw); margin:.45em 0 0; padding:0; list-style:none;
+}
+.reveal section.md.facts.g2 > ul{ grid-template-columns:repeat(2,1fr); gap:18px; max-width:1000px; }
+.reveal section.md.facts > ul > li{
+  margin:0; padding:17px 20px 15px; border-radius:3px;
+  background:var(--paper-2); border:1px solid var(--paper-edge); border-top:3px solid var(--rosa);
+  box-shadow:0 14px 28px -24px rgba(33,20,8,.6);
+  font-size:.88em; line-height:1.3; color:var(--ink-soft);
+}
+.reveal section.md.facts > ul > li:nth-child(even){ border-top-color:var(--teal); }
+.reveal section.md.facts > ul > li br{ display:none; }
+.reveal section.md.facts > ul > li strong:first-of-type{
+  display:block; font-family:var(--font-display); font-size:2.44em; font-weight:400;
+  color:var(--rosa-deep); line-height:1;
+}
+.reveal section.md.facts > ul > li strong:nth-of-type(2){
+  display:block; font-family:var(--font-mono); font-size:.71em; font-weight:600;
+  letter-spacing:.05em; text-transform:uppercase; color:var(--ink-soft);
+  margin:.45em 0 .4em;
+}
+.reveal section.md.facts > ul > li em{ color:var(--ink-soft); }
+/* negritas extra dentro de la descripción de la tarjeta */
+.reveal section.md.facts > ul > li strong:nth-of-type(n+3){ color:var(--ink); font-weight:650; }
+
+/* ---- variante limpia para la slide de cifras (class "facts stats") ---- */
+.reveal section.md.facts.stats > ul{ gap:22px; margin-top:.7em; }
+.reveal section.md.facts.stats > ul > li{
+  padding:30px 26px 26px; border-radius:5px;
+  background:linear-gradient(180deg,#FDF8EE 0%,var(--paper-2) 100%);
+  border:1px solid var(--paper-edge); border-top:1px solid var(--paper-edge);
+  box-shadow:0 18px 34px -30px rgba(33,20,8,.75);
+}
+.reveal section.md.facts.stats > ul > li:nth-child(even){ border-top-color:var(--paper-edge); }
+.reveal section.md.facts.stats > ul > li strong:first-of-type{
+  font-size:3.05em; color:var(--ink); letter-spacing:-.015em;
+}
+.reveal section.md.facts.stats > ul > li strong:first-of-type::after{
+  content:""; display:block; width:34px; height:3px; margin:.28em 0 0;
+  background:var(--rosa); border-radius:2px;
+}
+.reveal section.md.facts.stats > ul > li:nth-child(even) strong:first-of-type::after{ background:var(--teal); }
+.reveal section.md.facts.stats > ul > li strong:nth-of-type(2){
+  font-size:.66em; letter-spacing:.09em; color:var(--ink-faint); margin:.5em 0 0;
+}
+/* pie de fuente con enlace */
+.reveal section.md.facts.stats > p{
+  margin-top:1.1em; font-family:var(--font-mono); font-size:.56em;
+  letter-spacing:.03em; color:var(--ink-faint);
+}
+.reveal section.md.facts.stats > p a{
+  color:var(--ink); text-decoration:underline; text-underline-offset:.25em;
+  text-decoration-color:var(--rosa-tint); text-decoration-thickness:1px;
+}
+.reveal section.md.facts.stats > p a:hover{ text-decoration-color:var(--rosa); }
+
+/* ---- grilla de imágenes (class "imgrid"): tabla, fila 1 imágenes, fila 2 pies ---- */
+.reveal section.md.imgrid > table{
+  width:100%; margin-top:.5em; table-layout:fixed;
+  border-collapse:separate; border-spacing:18px 0;
+}
+.reveal section.md.imgrid th,
+.reveal section.md.imgrid td{ border:0; padding:0; vertical-align:top; text-align:left; font-weight:400; }
+.reveal section.md.imgrid th{ vertical-align:middle; }
+.reveal section.md.imgrid > h2 + p{ font-size:.96em; max-width:980px; margin-bottom:.5em; }
+.reveal section.md.imgrid th{
+  background:var(--paper-2); padding:14px; border:1px solid var(--paper-edge); border-radius:2px;
+  box-shadow:0 18px 40px -22px rgba(33,20,8,.55), 0 2px 0 rgba(255,255,255,.5) inset;
+}
+.reveal section.md.imgrid th img{ display:block; width:100%; height:auto; max-height:300px; object-fit:contain; }
+.reveal section.md.imgrid td{
+  font-family:var(--font-mono); font-size:.6em; letter-spacing:.04em;
+  line-height:1.35; color:var(--ink-faint); padding-top:.7em;
+}
+.reveal section.md.imgrid td strong{ color:var(--rosa-deep); font-weight:600; }
+
+/* ---- pie de foto a pantalla completa (class "bleed"): la cita > ---- */
+.reveal section.md.bleed > blockquote{
+  position:absolute; left:50%; transform:translateX(-50%); bottom:40px; z-index:4;
+  width:auto; max-width:min(1000px,86%); margin:0; padding:.85em 1.4em;
+  text-align:center; font-style:normal;
+  font-family:var(--font-mono); font-size:.62em; letter-spacing:.04em; line-height:1.5;
+  color:#F6ECDA; background:rgba(12,9,6,.95);
+  border:1px solid rgba(188,96,118,.45); border-radius:4px;
+  box-shadow:0 18px 40px -18px rgba(0,0,0,.9);
+}
+.reveal section.md.bleed > blockquote p{ margin:0; }
+.reveal section.md.bleed > blockquote strong{ color:#fff; font-weight:600; }
+.reveal section.md.bleed > blockquote strong:first-of-type{
+  display:block; color:var(--rosa); letter-spacing:.22em; text-transform:uppercase;
+  font-size:.82em; margin-bottom:.4em;
+}
+.reveal section.md.bleed > blockquote strong:first-of-type + br{ display:none; }
+.reveal section.md.bleed > blockquote .by{
+  display:block; margin-top:.45em; font-size:.78em; letter-spacing:.02em;
+  color:rgba(246,236,218,.62);
+}
+
+/* ---- animación dentro de la slide (class "hero"): imagen bajo el título ---- */
+.reveal section.md.hero img{
+  display:block; margin:.35em auto 0; width:auto; height:auto;
+  max-width:min(1200px,96%); max-height:560px;
+  border-radius:4px; box-shadow:0 22px 46px -28px rgba(33,27,19,.5);
+}
+.reveal section.md.hero > h1{ font-size:1.95em; margin-bottom:0; }
+
+/* ---- crédito de mapeadores bajo la animación (class "credit") ---- */
+.reveal section.md .credit{
+  margin:.55em auto 0; text-align:center;
+  font-family:var(--font-mono); font-size:.34em; letter-spacing:.05em;
+  color:var(--ink-faint);
+}
+.reveal section.md .credit b{ color:var(--rosa-deep); font-weight:600; }
+.reveal section.md .credit span{ opacity:.65; }
+
+/* ---- captura a pantalla completa con su URL debajo (class "shot") ---- */
+.reveal section.md.shot{ display:flex; flex-direction:column; justify-content:center; height:100%; }
+.reveal section.md.shot > p{ margin:0; width:100%; max-width:none; text-align:center; }
+.reveal section.md.shot img{
+  display:block; margin:0 auto; width:auto; max-width:96%; max-height:620px;
+  object-fit:contain; border-radius:3px;
+  box-shadow:0 24px 52px -30px rgba(33,27,19,.45);
+}
+.reveal section.md.shot > p:has(code),
+.reveal section.md.shot > p:has(a){
+  margin-top:.85em; text-align:center;
+}
+.reveal section.md.shot code{
+  background:none; padding:0; border:0;
+  font-family:var(--font-mono); font-size:.62em; letter-spacing:.02em;
+  color:var(--ink-soft); text-decoration:underline; text-underline-offset:.35em;
+  text-decoration-color:var(--rosa-tint);
+}
+.reveal section.md.shot.dark code{ color:#E9DCC6; text-decoration-color:rgba(188,96,118,.6); }
+/* la URL del pie es un enlace: abre en otra pestaña */
+.reveal section.md.shot > p > a{ border-bottom:0; }
+.reveal section.md.shot a code{ color:var(--teal-deep); text-decoration-color:var(--teal); }
+.reveal section.md.shot a:hover code{ color:var(--rosa-deep); text-decoration-color:var(--rosa); }
+
+/* ---- cita grande (class "quote") ---- */
+.reveal section.md.quote > blockquote{
+  width:100%; max-width:960px; margin:0; padding:0;
+  background:none; box-shadow:none;
+  font-family:var(--font-display); font-style:italic; font-size:1.5em;
+  line-height:1.25; color:var(--ink);
+}
+.reveal section.md.quote > blockquote p{ margin:0; }
+.reveal section.md.quote > blockquote p:last-child{
+  font-family:var(--font-mono); font-style:normal; font-size:.5em;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--ink-faint); margin-top:1em;
+}
+
+/* ---- dos columnas (class "cols"): h1, luego ### + lista por columna ---- */
+/* reveal fuerza display:block en la slide visible, por eso el !important */
+.reveal section.md.cols{ display:grid !important; grid-template-columns:1fr 1fr; column-gap:46px; align-content:center; }
+.reveal section.md.cols > h1{ grid-column:1/-1; font-size:2.3em; margin-top:0; }
+.reveal section.md.cols > h3{
+  font-family:var(--font-display); font-size:1.28em; font-weight:600;
+  text-transform:none; letter-spacing:-.018em; color:var(--rosa-deep);
+  display:block; margin:.6em 0 .3em;
+}
+.reveal section.md.cols > h3::before{ display:none; }
+.reveal section.md.cols > h3:nth-of-type(1){ grid-column:1; grid-row:2; }
+.reveal section.md.cols > ul:nth-of-type(1){ grid-column:1; grid-row:3; }
+.reveal section.md.cols > h3:nth-of-type(2){ grid-column:2; grid-row:2; }
+.reveal section.md.cols > ul:nth-of-type(2){ grid-column:2; grid-row:3; }
+.reveal section.md.cols > p{ grid-column:1/-1; grid-row:4; }
+.reveal section.md.cols > ul{ list-style:none; margin:0; padding:0; }
+.reveal section.md.cols > ul > li{ font-size:.92em; margin:.5em 0; padding:0; }
+.reveal section.md.cols > ul > li strong{ color:var(--ink); }
+
+/* ---- cierre (class "closing") ---- */
+.reveal section.md.closing{ text-align:center; }
+.reveal section.md.closing > h3{ justify-content:center; color:var(--rosa-deep); }
+.reveal section.md.closing > h1{ font-size:2.5em; margin-bottom:.1em; }
+.reveal section.md.closing > p:last-of-type{
+  font-family:var(--font-mono); font-size:.62em; letter-spacing:.04em;
+  color:var(--ink-soft); line-height:1.7; margin-top:1.1em; max-width:none;
+}
+.reveal section.md.closing > p:last-of-type strong{ color:var(--ink); font-weight:600; }
+
+/* ---- ecuación OHM = OSM (class "equation") ---- */
+.reveal section.md.equation{ text-align:center; }
+.reveal section.md.equation > h2{
+  font-family:var(--font-display); font-size:1.15em; line-height:1.3; color:var(--ink);
+  margin:1.1em 0 0; white-space:nowrap; max-width:none;
+}
+.reveal section.md.equation > h2 strong{ color:var(--rosa); font-weight:inherit; }
+.reveal section.md.equation > h2 code{
+  font-family:var(--font-mono); font-size:.52em; font-weight:600;
+  padding:.34em .6em; margin-left:.32em; border-radius:4px;
+  background:var(--rosa-tint); color:var(--rosa-deep);
+  vertical-align:.16em; white-space:nowrap;
+}
+.reveal section.md.equation > p:first-of-type{ font-size:1.5em; margin-top:.4em; max-width:none; }
+.reveal section.md.equation img{ width:540px; margin:1.4em auto 0; display:block; }
+.reveal section.md.equation > p:last-of-type{ margin:.9em auto 0; max-width:680px; }
+
+/* ---- animación de entrada: se aplica sola, en orden ---- */
+.reveal section.present.md > *{ animation:riseIn .7s cubic-bezier(.2,.7,.2,1) both; }
+.reveal section.present.md > *:nth-child(1){ animation-delay:.08s; }
+.reveal section.present.md > *:nth-child(2){ animation-delay:.18s; }
+.reveal section.present.md > *:nth-child(3){ animation-delay:.30s; }
+.reveal section.present.md > *:nth-child(4){ animation-delay:.42s; }
+.reveal section.present.md > *:nth-child(5){ animation-delay:.54s; }
+.reveal section.present.md > *:nth-child(6){ animation-delay:.66s; }
+.reveal section.present.md > *:nth-child(7){ animation-delay:.78s; }
+.reveal section.present.md > aside.notes{ animation:none; }
+.reveal section.present.md.bleed > blockquote{ animation-name:riseInCap; }

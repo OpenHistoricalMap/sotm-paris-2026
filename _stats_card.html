@@ -1,0 +1,65 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'Fraunces';src:url('fonts/fraunces-wght.woff2') format('woff2');font-weight:100 900;}
+@font-face{font-family:'Hanken Grotesk';src:url('fonts/hanken-wght.woff2') format('woff2');font-weight:100 900;}
+@font-face{font-family:'IBM Plex Mono';src:url('fonts/plexmono-400.woff2') format('woff2');font-weight:400;}
+@font-face{font-family:'IBM Plex Mono';src:url('fonts/plexmono-600.woff2') format('woff2');font-weight:600;}
+:root{
+  --paper:#FFFFFF; --paper-2:#FAF8F4; --paper-edge:#E4DED2;
+  --ink:#211B13; --ink-soft:#574B39; --ink-faint:#8A7A60;
+  --rosa:#BC6076; --rosa-deep:#8C384E; --teal:#2C8A7B; --teal-deep:#1C5E54;
+  --display:'Fraunces',Georgia,serif; --mono:'IBM Plex Mono',monospace; --body:'Hanken Grotesk',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1600px;height:900px;background:var(--paper);font-family:var(--body);color:var(--ink);
+  padding:64px 72px 56px;display:flex;flex-direction:column;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");}
+.kicker{font-family:var(--mono);font-size:19px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--rosa-deep);display:flex;align-items:center;gap:16px;margin-bottom:6px}
+.kicker::before{content:"";width:52px;height:3px;background:var(--rosa);border-radius:2px}
+h1{font-family:var(--display);font-size:60px;font-weight:600;letter-spacing:-.015em;margin-bottom:30px}
+.wrap{flex:1;display:grid;grid-template-columns:1fr 1.35fr;gap:26px}
+.hero{background:var(--paper-2);border:1px solid var(--paper-edge);border-top:4px solid var(--rosa);
+  border-radius:6px;padding:52px 40px;display:flex;flex-direction:column;justify-content:center}
+.hero .n{font-family:var(--display);font-size:195px;font-weight:600;line-height:.9;letter-spacing:-.03em}
+.hero .l{font-family:var(--mono);font-size:24px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-soft);margin-top:20px}
+.hero .note{font-size:23px;color:var(--ink-faint);margin-top:16px;line-height:1.4;max-width:22ch}
+.grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr 1fr;gap:22px}
+.c{background:var(--paper-2);border:1px solid var(--paper-edge);border-top:3px solid var(--paper-edge);
+  border-radius:6px;padding:22px 26px;display:flex;flex-direction:column;justify-content:center}
+.c .n{font-family:var(--display);font-size:74px;font-weight:600;line-height:1;letter-spacing:-.02em}
+.c .n.long{font-size:44px;white-space:nowrap}
+.c .l{font-family:var(--mono);font-size:17px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft);margin-top:8px}
+.tag{font-family:var(--mono);font-size:16px;color:var(--rosa-deep);background:rgba(188,96,118,.10);
+  border:1px solid rgba(188,96,118,.28);border-radius:3px;padding:2px 8px;align-self:flex-start;margin-top:12px}
+.wide{grid-column:1 / -1;border-top-color:var(--teal);flex-direction:row;align-items:center;gap:30px}
+.wide .n{color:var(--teal-deep);font-size:86px}
+.wide .tag{color:var(--teal-deep);background:rgba(44,138,123,.10);border-color:rgba(44,138,123,.30);margin-top:0}
+.wide .txt{display:flex;flex-direction:column;gap:8px}
+.wide .l{margin-top:0}
+.src{font-family:var(--mono);font-size:17px;color:var(--ink-faint);margin-top:26px}
+</style></head><body>
+<div class="kicker">Statistics</div>
+<h1>What the community has mapped</h1>
+<div class="wrap">
+  <div class="hero">
+    <div class="n">3.6M</div>
+    <div class="l">dated elements</div>
+    <span class="tag">start_date</span>
+    <div class="note">Every one of them knows<br>when it existed.</div>
+  </div>
+  <div class="grid">
+    <div class="c"><div class="n long">1.1 million km</div><div class="l">roads</div><span class="tag">highway</span></div>
+    <div class="c"><div class="n">760k</div><div class="l">buildings</div><span class="tag">building</span></div>
+    <div class="c"><div class="n long">~1 million km</div><div class="l">railways</div><span class="tag">railway</span></div>
+    <div class="c"><div class="n">192k</div><div class="l">boundaries</div><span class="tag">boundary</span></div>
+    <div class="c wide"><div class="n">685k</div>
+      <div class="txt"><div class="l">features that are gone</div>
+      <span class="tag">end_date</span></div>
+      <div class="l" style="margin-left:auto;text-align:right;color:var(--ink-faint)">19% of<br>dated elements</div>
+    </div>
+  </div>
+</div>
+<div class="src">Source: taginfo.openhistoricalmap.org · August 2026</div>
+</body></html>

@@ -1,0 +1,3758 @@
+[
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "text",
+    "tag": "h3",
+    "runs": [
+     {
+      "text": "The map with a time axis",
+      "size": 18.36,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 17.9928,
+    "x": 69.99999682108562,
+    "y": 19.01562213897705,
+    "w": 1139.9998982747397,
+    "h": 17.984378337860107
+   },
+   {
+    "kind": "text",
+    "tag": "h1",
+    "runs": [
+     {
+      "text": "State of",
+      "size": 103.7,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 103.7,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "OpenHistoricalMap",
+      "size": 103.7,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 99.552,
+    "x": 69.99999682108562,
+    "y": 49.84374841054281,
+    "w": 1139.9998982747397,
+    "h": 199.09375508626303
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "Mapping the world's history, openly.",
+      "size": 48.28,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 380,
+      "italic": true,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 55.0392,
+    "x": 69.99999682108562,
+    "y": 285.2187474568685,
+    "w": 1009.9998474121094,
+    "h": 55.031236012776695
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "State of the Map 2026 · Saturday, August 29 · Paris, France",
+      "size": 21.08,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 35.836,
+    "x": 69.99999682108562,
+    "y": 374.03122584025067,
+    "w": 879.9999872843425,
+    "h": 58.90626907348633
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 0
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/github-1ec5.jpg",
+    "x": 325.98438262939453,
+    "y": 70.23437023162842,
+    "w": 237.99997965494794,
+    "h": 238.0000114440918
+   },
+   {
+    "kind": "img",
+    "src": "assets/github-Rub21.jpg",
+    "x": 702.078119913737,
+    "y": 70.23437023162842,
+    "w": 237.99997965494794,
+    "h": 238.0000114440918
+   },
+   {
+    "kind": "text",
+    "tag": "h3",
+    "runs": [
+     {
+      "text": "Who we are",
+      "size": 18.36,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 17.9928,
+    "x": 69.99999682108562,
+    "y": 19.01562213897705,
+    "w": 1139.9998982747397,
+    "h": 17.984378337860107
+   },
+   {
+    "kind": "text",
+    "tag": "td",
+    "runs": [
+     {
+      "text": "Minh · 1ec5",
+      "size": 43.52,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 43.52,
+    "x": 263.90622456868493,
+    "y": 313.23436101277673,
+    "w": 362.1718724568685,
+    "h": 65.26562372843425
+   },
+   {
+    "kind": "text",
+    "tag": "td",
+    "runs": [
+     {
+      "text": "Ruben · Rub21",
+      "size": 43.52,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 43.52,
+    "x": 626.0780970255535,
+    "y": 313.23436101277673,
+    "w": 390.0000254313151,
+    "h": 65.26562372843425
+   },
+   {
+    "kind": "text",
+    "tag": "td",
+    "runs": [
+     {
+      "text": "Software Engineer &",
+      "size": 21.08,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 21.08,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "none"
+     },
+     {
+      "text": "Community Facilitator",
+      "size": 21.08,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.62,
+    "x": 263.90622456868493,
+    "y": 378.49998474121094,
+    "w": 362.1718724568685,
+    "h": 65.31251271565756
+   },
+   {
+    "kind": "text",
+    "tag": "td",
+    "runs": [
+     {
+      "text": "Infrastructure Engineer",
+      "size": 21.08,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.62,
+    "x": 626.0780970255535,
+    "y": 378.49998474121094,
+    "w": 390.0000254313151,
+    "h": 65.31251271565756
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 1
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/ohm/nyc-penn-station.gif",
+    "x": 182.99999237060547,
+    "y": 61.734374364217125,
+    "w": 913.9999389648438,
+    "h": 620.0000127156576
+   },
+   {
+    "kind": "text",
+    "tag": "h3",
+    "runs": [
+     {
+      "text": "Everything changes",
+      "size": 18.36,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 17.9928,
+    "x": 69.99999682108562,
+    "y": 19.01562213897705,
+    "w": 1139.9998982747397,
+    "h": 17.984378337860107
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 2
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "box",
+    "color": "rgb(231, 203, 205)",
+    "alpha": 1,
+    "radius": 4,
+    "border": "rgba(140, 56, 78, 0.28)",
+    "borderWidth": 1,
+    "x": 791.4687474568685,
+    "y": 49.84374841054281,
+    "w": 177.6405970255534,
+    "h": 42.81249841054281
+   },
+   {
+    "kind": "box",
+    "color": "rgb(231, 203, 205)",
+    "alpha": 1,
+    "radius": 4,
+    "border": "rgba(140, 56, 78, 0.28)",
+    "borderWidth": 1,
+    "x": 983.4687550862631,
+    "y": 49.84374841054281,
+    "w": 202.84366607666016,
+    "h": 42.81249841054281
+   },
+   {
+    "kind": "img",
+    "src": "assets/time-axis.svg",
+    "x": 369.9999809265137,
+    "y": 165.20312627156576,
+    "w": 540.0000254313152,
+    "h": 269.9999809265137
+   },
+   {
+    "kind": "text",
+    "tag": "h2",
+    "runs": [
+     {
+      "text": "OpenHistoricalMap ",
+      "size": 39.1,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "=",
+      "size": 39.1,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(188, 96, 118)",
+      "transform": "none"
+     },
+     {
+      "text": " OpenStreetMap ",
+      "size": 39.1,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": " ",
+      "size": 20.332,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": " ",
+      "size": 39.1,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": " ",
+      "size": 20.332,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 50.83,
+    "x": 69.99999682108562,
+    "y": 42.99999872843425,
+    "w": 1139.9998982747397,
+    "h": 50.81249872843425
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "+ start_date",
+      "size": 20.332,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 26.4316,
+    "x": 791.4687474568685,
+    "y": 49.84374841054281,
+    "w": 177.6405970255534,
+    "h": 42.81249841054281
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "[ + end_date ]",
+      "size": 20.332,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 26.4316,
+    "x": 983.4687550862631,
+    "y": 49.84374841054281,
+    "w": 202.84366607666016,
+    "h": 42.81249841054281
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 3
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "box",
+    "color": "rgba(0, 0, 0, 0)",
+    "alpha": 0,
+    "radius": 5,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 69.99999682108562,
+    "y": 100.81249872843425,
+    "w": 365.3280893961589,
+    "h": 213.32810719807944
+   },
+   {
+    "kind": "box",
+    "color": "rgba(0, 0, 0, 0)",
+    "alpha": 0,
+    "radius": 5,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 457.32812881469727,
+    "y": 100.81249872843425,
+    "w": 365.32812118530273,
+    "h": 213.32810719807944
+   },
+   {
+    "kind": "box",
+    "color": "rgba(0, 0, 0, 0)",
+    "alpha": 0,
+    "radius": 5,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 844.656244913737,
+    "y": 100.81249872843425,
+    "w": 365.34366607666016,
+    "h": 213.32810719807944
+   },
+   {
+    "kind": "box",
+    "color": "rgba(0, 0, 0, 0)",
+    "alpha": 0,
+    "radius": 5,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 69.99999682108562,
+    "y": 336.14063262939453,
+    "w": 365.3280893961589,
+    "h": 213.32813898722333
+   },
+   {
+    "kind": "box",
+    "color": "rgba(0, 0, 0, 0)",
+    "alpha": 0,
+    "radius": 5,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 457.32812881469727,
+    "y": 336.14063262939453,
+    "w": 365.32812118530273,
+    "h": 213.32813898722333
+   },
+   {
+    "kind": "box",
+    "color": "rgba(0, 0, 0, 0)",
+    "alpha": 0,
+    "radius": 5,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 844.656244913737,
+    "y": 336.14063262939453,
+    "w": 365.34366607666016,
+    "h": 213.32813898722333
+   },
+   {
+    "kind": "text",
+    "tag": "h2",
+    "runs": [
+     {
+      "text": "Statistics",
+      "size": 65.28,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 63.9744,
+    "x": 69.99999682108562,
+    "y": 13.046874602635702,
+    "w": 1139.9998982747397,
+    "h": 63.9687458674113
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "3.6M",
+      "size": 91.256,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "dated elements",
+      "size": 19.7472,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 69.99999682108562,
+    "y": 100.81249872843425,
+    "w": 365.3280893961589,
+    "h": 213.32810719807944
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "1.6M",
+      "size": 91.256,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "roads",
+      "size": 19.7472,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 457.32812881469727,
+    "y": 100.81249872843425,
+    "w": 365.32812118530273,
+    "h": 213.32810719807944
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "760k",
+      "size": 91.256,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "buildings",
+      "size": 19.7472,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 844.656244913737,
+    "y": 100.81249872843425,
+    "w": 365.34366607666016,
+    "h": 213.32810719807944
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "341k",
+      "size": 91.256,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "railways",
+      "size": 19.7472,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 69.99999682108562,
+    "y": 336.14063262939453,
+    "w": 365.3280893961589,
+    "h": 213.32813898722333
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "192k",
+      "size": 91.256,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "boundaries",
+      "size": 19.7472,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 457.32812881469727,
+    "y": 336.14063262939453,
+    "w": 365.32812118530273,
+    "h": 213.32813898722333
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "685k",
+      "size": 91.256,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "with an end date",
+      "size": 19.7472,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 844.656244913737,
+    "y": 336.14063262939453,
+    "w": 365.34366607666016,
+    "h": 213.32813898722333
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "Source: ",
+      "size": 19.04,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "none"
+     },
+     {
+      "text": "taginfo.openhistoricalmap.org",
+      "size": 19.04,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": " · August 2026",
+      "size": 19.04,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 27.0368,
+    "x": 69.99999682108562,
+    "y": 570.4062461853027,
+    "w": 1139.9998982747397,
+    "h": 27.031199137369793
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 4
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": "http://localhost:8850/assets/mundo.gif",
+  "items": [
+   {
+    "kind": "box",
+    "color": "rgba(12, 9, 6, 0.95)",
+    "alpha": 0.95,
+    "radius": 4,
+    "border": "rgba(188, 96, 118, 0.45)",
+    "borderWidth": 1,
+    "x": 453.61719131469727,
+    "y": 610.7499758402507,
+    "w": 372.7655728658041,
+    "h": 69.24997965494792
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "The world through time",
+      "size": 17.2856,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(188, 96, 118)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 29.9336,
+    "x": 484.11719004313153,
+    "y": 629.6562512715658,
+    "w": 311.76560719807946,
+    "h": 24.531173706054688
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 5
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": "http://localhost:8850/assets/ohm/paris-city.gif",
+  "items": [
+   {
+    "kind": "box",
+    "color": "rgba(12, 9, 6, 0.95)",
+    "alpha": 0.95,
+    "radius": 4,
+    "border": "rgba(188, 96, 118, 0.45)",
+    "borderWidth": 1,
+    "x": 474.859364827474,
+    "y": 610.7499758402507,
+    "w": 330.28125762939453,
+    "h": 69.24997965494792
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "Paris · 1750 → 2026",
+      "size": 17.2856,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(188, 96, 118)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 29.9336,
+    "x": 505.3593635559082,
+    "y": 629.6562512715658,
+    "w": 269.2812283833822,
+    "h": 24.531173706054688
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 6
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": "http://localhost:8850/assets/ohm/paris-cite.gif",
+  "items": [
+   {
+    "kind": "box",
+    "color": "rgba(12, 9, 6, 0.95)",
+    "alpha": 0.95,
+    "radius": 4,
+    "border": "rgba(188, 96, 118, 0.45)",
+    "borderWidth": 1,
+    "x": 411.08592351277673,
+    "y": 610.7499758402507,
+    "w": 457.8281084696452,
+    "h": 69.24997965494792
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "Île de la Cité · 1750 → 2026",
+      "size": 17.2856,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(188, 96, 118)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 29.9336,
+    "x": 441.58592224121094,
+    "y": 629.6562512715658,
+    "w": 396.8281428019206,
+    "h": 24.531173706054688
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 7
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 2,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 87.99999554951987,
+    "y": 259.3906084696452,
+    "w": 356.00001017252606,
+    "h": 329.99998728434247
+   },
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 2,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 461.9999885559082,
+    "y": 259.3906084696452,
+    "w": 355.9999783833822,
+    "h": 329.99998728434247
+   },
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 2,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 835.9999974568685,
+    "y": 259.3906084696452,
+    "w": 355.99988301595056,
+    "h": 329.99998728434247
+   },
+   {
+    "kind": "img",
+    "src": "assets/ohm/image32.gif",
+    "x": 102.99999713897705,
+    "y": 332.7031135559082,
+    "w": 325.99999109903973,
+    "h": 183.3750089009603
+   },
+   {
+    "kind": "img",
+    "src": "assets/morelia-josm-georef-2.png",
+    "x": 476.99998219807946,
+    "y": 356.3906033833822,
+    "w": 326.0000228881836,
+    "h": 135.9999974568685
+   },
+   {
+    "kind": "img",
+    "src": "assets/ohm/vespucci-2.png",
+    "x": 850.9999593098959,
+    "y": 274.3906339009603,
+    "w": 326.0000228881836,
+    "h": 299.9999364217123
+   },
+   {
+    "kind": "text",
+    "tag": "h3",
+    "runs": [
+     {
+      "text": "Let's map",
+      "size": 18.36,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 17.9928,
+    "x": 69.99999682108562,
+    "y": 19.01562213897705,
+    "w": 1139.9998982747397,
+    "h": 17.984378337860107
+   },
+   {
+    "kind": "text",
+    "tag": "h2",
+    "runs": [
+     {
+      "text": "How to map",
+      "size": 65.28,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 63.9744,
+    "x": 69.99999682108562,
+    "y": 62.890625,
+    "w": 1139.9998982747397,
+    "h": 63.968753814697266
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "One open dataset, ",
+      "size": 32.64,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "three editors",
+      "size": 32.64,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 680,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": ". Log in with your OHM/OSM account.",
+      "size": 32.64,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 46.3488,
+    "x": 69.99999682108562,
+    "y": 149.70312118530273,
+    "w": 980.0000508626302,
+    "h": 92.68749554951987
+   },
+   {
+    "kind": "text",
+    "tag": "td",
+    "runs": [
+     {
+      "text": "iD · browser",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 27.54,
+    "x": 87.99999554951987,
+    "y": 589.3905957539877,
+    "w": 356.00001017252606,
+    "h": 41.81251525878906
+   },
+   {
+    "kind": "text",
+    "tag": "td",
+    "runs": [
+     {
+      "text": "JOSM · desktop",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 27.54,
+    "x": 461.9999885559082,
+    "y": 589.3905957539877,
+    "w": 355.9999783833822,
+    "h": 41.81251525878906
+   },
+   {
+    "kind": "text",
+    "tag": "td",
+    "runs": [
+     {
+      "text": "Vespucci · Android",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 27.54,
+    "x": 835.9999974568685,
+    "y": 589.3905957539877,
+    "w": 355.99988301595056,
+    "h": 41.81251525878906
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 8
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/tour/01-website.png",
+    "x": 157.98436800638837,
+    "y": 0,
+    "w": 964.0313466389974,
+    "h": 619.9999491373699
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": " ",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 650.6250063578289,
+    "w": 1139.9998982747397,
+    "h": 51.171875
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "openhistoricalmap.org",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.7296,
+    "x": 494.56249872843426,
+    "y": 665.6249682108562,
+    "w": 290.8749580383301,
+    "h": 29.000027974446617
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 9
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/tour/02-feature.png",
+    "x": 175.1406192779541,
+    "y": 0,
+    "w": 929.7030766805013,
+    "h": 619.9999491373699
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": " ",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 650.6250063578289,
+    "w": 1139.9998982747397,
+    "h": 51.171875
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "openhistoricalmap.org/way/200229788",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.7296,
+    "x": 397.60936101277673,
+    "y": 665.6249682108562,
+    "w": 484.7812334696452,
+    "h": 29.000027974446617
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 10
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/tour/03-turbo.png",
+    "x": 157.98436800638837,
+    "y": 0,
+    "w": 964.0313466389974,
+    "h": 619.9999491373699
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": " ",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 650.6250063578289,
+    "w": 1139.9998982747397,
+    "h": 51.171875
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "overpass-turbo.openhistoricalmap.org",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.7296,
+    "x": 390.67185719807946,
+    "y": 665.6249682108562,
+    "w": 498.64063262939453,
+    "h": 29.000027974446617
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 11
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/tour/06-qlever.png",
+    "x": 157.98436800638837,
+    "y": 0,
+    "w": 964.0313466389974,
+    "h": 619.9999491373699
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": " ",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 650.6250063578289,
+    "w": 1139.9998982747397,
+    "h": 51.171875
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "qlever.dev/ohm-planet",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.7296,
+    "x": 494.56249872843426,
+    "y": 665.6249682108562,
+    "w": 290.8749580383301,
+    "h": 29.000027974446617
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 12
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/tour/07-embed.png",
+    "x": 157.98436800638837,
+    "y": 0,
+    "w": 964.0313466389974,
+    "h": 619.9999491373699
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": " ",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 650.6250063578289,
+    "w": 1139.9998982747397,
+    "h": 51.171875
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "embed.openhistoricalmap.org",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.7296,
+    "x": 453.00000508626306,
+    "y": 665.6249682108562,
+    "w": 373.98433685302734,
+    "h": 29.000027974446617
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 13
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/tour/11-planet.png",
+    "x": 92.81249841054282,
+    "y": 0,
+    "w": 1094.374974568685,
+    "h": 594.390614827474
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": " ",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 625.015672047933,
+    "w": 1139.9998982747397,
+    "h": 51.171875
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "planet.openhistoricalmap.org",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.7296,
+    "x": 446.07810974121094,
+    "y": 640.0156339009603,
+    "w": 387.82812754313153,
+    "h": 28.999964396158855
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 14
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 2,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 87.99999554951987,
+    "y": 149.70312118530273,
+    "w": 356.00001017252606,
+    "h": 213.8437589009603
+   },
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 2,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 461.9999885559082,
+    "y": 149.70312118530273,
+    "w": 355.9999783833822,
+    "h": 213.8437589009603
+   },
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 2,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 835.9999974568685,
+    "y": 149.70312118530273,
+    "w": 355.99988301595056,
+    "h": 213.8437589009603
+   },
+   {
+    "kind": "img",
+    "src": "assets/ohm/image23.png",
+    "x": 102.99999713897705,
+    "y": 164.93749618530273,
+    "w": 325.99999109903973,
+    "h": 183.3750089009603
+   },
+   {
+    "kind": "img",
+    "src": "assets/ohm/image28.png",
+    "x": 476.99998219807946,
+    "y": 164.78125254313153,
+    "w": 326.0000228881836,
+    "h": 183.68749618530273
+   },
+   {
+    "kind": "img",
+    "src": "assets/ohm/image26.png",
+    "x": 850.9999593098959,
+    "y": 164.70311482747397,
+    "w": 326.0000228881836,
+    "h": 183.84373982747397
+   },
+   {
+    "kind": "text",
+    "tag": "h3",
+    "runs": [
+     {
+      "text": "And the rest of the toolchain",
+      "size": 18.36,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 17.9928,
+    "x": 69.99999682108562,
+    "y": 19.01562213897705,
+    "w": 1139.9998982747397,
+    "h": 17.984378337860107
+   },
+   {
+    "kind": "text",
+    "tag": "h2",
+    "runs": [
+     {
+      "text": "Everything else you already know",
+      "size": 65.28,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 63.9744,
+    "x": 69.99999682108562,
+    "y": 62.890625,
+    "w": 1139.9998982747397,
+    "h": 63.968753814697266
+   },
+   {
+    "kind": "text",
+    "tag": "td",
+    "runs": [
+     {
+      "text": "tasks",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": ".ohm.org · coordinated mapping",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 27.54,
+    "x": 87.99999554951987,
+    "y": 363.54688008626306,
+    "w": 356.00001017252606,
+    "h": 69.35936609903972
+   },
+   {
+    "kind": "text",
+    "tag": "td",
+    "runs": [
+     {
+      "text": "osmcha",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": " · changeset review",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 27.54,
+    "x": 461.9999885559082,
+    "y": 363.54688008626306,
+    "w": 355.9999783833822,
+    "h": 69.35936609903972
+   },
+   {
+    "kind": "text",
+    "tag": "td",
+    "runs": [
+     {
+      "text": "taginfo · planet",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": " · data and downloads",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 27.54,
+    "x": 835.9999974568685,
+    "y": 363.54688008626306,
+    "w": 355.99988301595056,
+    "h": 69.35936609903972
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "Coordinated mapping, changeset review, tag stats. The same OSM tools, running on historical data.",
+      "size": 25.84,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 36.6928,
+    "x": 69.99999682108562,
+    "y": 448.4062512715658,
+    "w": 1139.9998982747397,
+    "h": 73.37500254313152
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 15
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "“A time machine, brought to you by the community.”",
+      "size": 51,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 380,
+      "italic": true,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 72.42,
+    "x": 69.99999682108562,
+    "y": 0,
+    "w": 959.9999745686849,
+    "h": 144.81250445048016
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "OpenHistoricalMap at the North American Cartographic Information Society (NACIS) · 2024",
+      "size": 25.5,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 36.21,
+    "x": 69.99999682108562,
+    "y": 170.3125,
+    "w": 959.9999745686849,
+    "h": 72.4062442779541
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 16
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 3,
+    "border": "rgb(188, 96, 118)",
+    "borderWidth": 3,
+    "x": 69.99999682108562,
+    "y": 149.70312118530273,
+    "w": 490.99998474121094,
+    "h": 193.54686737060547
+   },
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 3,
+    "border": "rgb(44, 138, 123)",
+    "borderWidth": 3,
+    "x": 578.9999643961589,
+    "y": 149.70312118530273,
+    "w": 491.0000483194987,
+    "h": 193.54686737060547
+   },
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 3,
+    "border": "rgb(188, 96, 118)",
+    "borderWidth": 3,
+    "x": 69.99999682108562,
+    "y": 361.24998728434247,
+    "w": 490.99998474121094,
+    "h": 193.54689915974936
+   },
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 3,
+    "border": "rgb(44, 138, 123)",
+    "borderWidth": 3,
+    "x": 578.9999643961589,
+    "y": 361.24998728434247,
+    "w": 491.0000483194987,
+    "h": 193.54689915974936
+   },
+   {
+    "kind": "text",
+    "tag": "h3",
+    "runs": [
+     {
+      "text": "Who keeps it alive",
+      "size": 18.36,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 17.9928,
+    "x": 69.99999682108562,
+    "y": 19.01562213897705,
+    "w": 1139.9998982747397,
+    "h": 17.984378337860107
+   },
+   {
+    "kind": "text",
+    "tag": "h2",
+    "runs": [
+     {
+      "text": "How the project runs today",
+      "size": 65.28,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 63.9744,
+    "x": 69.99999682108562,
+    "y": 62.890625,
+    "w": 1139.9998982747397,
+    "h": 63.968753814697266
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "2,177",
+      "size": 73.0048,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "🙌 Active mappers",
+      "size": 21.2432,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "uppercase"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "Zero paid staff.",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 69.99999682108562,
+    "y": 149.70312118530273,
+    "w": 490.99998474121094,
+    "h": 193.54686737060547
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "💸",
+      "size": 73.0048,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "No dedicated funding",
+      "size": 21.2432,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "uppercase"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "We run on donations.",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 650,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 578.9999643961589,
+    "y": 149.70312118530273,
+    "w": 491.0000483194987,
+    "h": 193.54686737060547
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "⚙️",
+      "size": 73.0048,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "Maintainers",
+      "size": 21.2432,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "uppercase"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "A few volunteers.",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 69.99999682108562,
+    "y": 361.24998728434247,
+    "w": 490.99998474121094,
+    "h": 193.54689915974936
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "🌱",
+      "size": 73.0048,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "Sustainability",
+      "size": 21.2432,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "uppercase"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "Fragile but alive.",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 578.9999643961589,
+    "y": 361.24998728434247,
+    "w": 491.0000483194987,
+    "h": 193.54689915974936
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "TODO Minh",
+      "size": 37.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(255, 77, 77)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 53.108,
+    "x": 69.99999682108562,
+    "y": 580.9687614440918,
+    "w": 1139.9998982747397,
+    "h": 53.10935974121094
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 17
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 3,
+    "border": "rgb(188, 96, 118)",
+    "borderWidth": 3,
+    "x": 69.99999682108562,
+    "y": 149.70312118530273,
+    "w": 490.99998474121094,
+    "h": 193.54686737060547
+   },
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 3,
+    "border": "rgb(44, 138, 123)",
+    "borderWidth": 3,
+    "x": 578.9999643961589,
+    "y": 149.70312118530273,
+    "w": 491.0000483194987,
+    "h": 193.54686737060547
+   },
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 3,
+    "border": "rgb(188, 96, 118)",
+    "borderWidth": 3,
+    "x": 69.99999682108562,
+    "y": 361.24998728434247,
+    "w": 490.99998474121094,
+    "h": 193.54689915974936
+   },
+   {
+    "kind": "box",
+    "color": "rgb(250, 248, 244)",
+    "alpha": 1,
+    "radius": 3,
+    "border": "rgb(44, 138, 123)",
+    "borderWidth": 3,
+    "x": 578.9999643961589,
+    "y": 361.24998728434247,
+    "w": 491.0000483194987,
+    "h": 193.54689915974936
+   },
+   {
+    "kind": "text",
+    "tag": "h3",
+    "runs": [
+     {
+      "text": "Beyond the map",
+      "size": 18.36,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 17.9928,
+    "x": 69.99999682108562,
+    "y": 19.01562213897705,
+    "w": 1139.9998982747397,
+    "h": 17.984378337860107
+   },
+   {
+    "kind": "text",
+    "tag": "h2",
+    "runs": [
+     {
+      "text": "Who we work with",
+      "size": 65.28,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 63.9744,
+    "x": 69.99999682108562,
+    "y": 62.890625,
+    "w": 1139.9998982747397,
+    "h": 63.968753814697266
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "🔥",
+      "size": 73.0048,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "OldInsuranceMaps.net",
+      "size": 21.2432,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "uppercase"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "Sanborn maps, traced.",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 69.99999682108562,
+    "y": 149.70312118530273,
+    "w": 490.99998474121094,
+    "h": 193.54686737060547
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "🏛️",
+      "size": 73.0048,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "Newberry Library",
+      "size": 21.2432,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "uppercase"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "US county boundaries.",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 578.9999643961589,
+    "y": 149.70312118530273,
+    "w": 491.0000483194987,
+    "h": 193.54686737060547
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "🌐",
+      "size": 73.0048,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "Wikimedia",
+      "size": 21.2432,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "uppercase"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "Linked to Wikidata.",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 69.99999682108562,
+    "y": 361.24998728434247,
+    "w": 490.99998474121094,
+    "h": 193.54689915974936
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "🎓",
+      "size": 73.0048,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 400,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "Societies & classrooms",
+      "size": 21.2432,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "uppercase"
+     },
+     {
+      "text": "\n",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "Universities and hack-a-thons.",
+      "size": 29.92,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 38.896,
+    "x": 578.9999643961589,
+    "y": 361.24998728434247,
+    "w": 491.0000483194987,
+    "h": 193.54689915974936
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "TODO: confirm the final picks with Minh.",
+      "size": 25.84,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 36.6928,
+    "x": 69.99999682108562,
+    "y": 570.2968915303549,
+    "w": 1139.9998982747397,
+    "h": 36.687469482421875
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 18
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "text",
+    "tag": "h1",
+    "runs": [
+     {
+      "text": "What's next, and what we need",
+      "size": 78.2,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 76.636,
+    "x": 69.99999682108562,
+    "y": 78.74999841054282,
+    "w": 1139.9998982747397,
+    "h": 76.62500540415446
+   },
+   {
+    "kind": "text",
+    "tag": "h3",
+    "runs": [
+     {
+      "text": "Where we want to go",
+      "size": 43.52,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 42.6496,
+    "x": 69.99999682108562,
+    "y": 208.84373982747397,
+    "w": 546.999994913737,
+    "h": 42.64062245686849
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "→ ",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "TODO",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 680,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": " · upcoming development #1",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 40.664,
+    "x": 69.99999682108562,
+    "y": 280.1562309265137,
+    "w": 546.999994913737,
+    "h": 40.65624872843425
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "→ ",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "TODO",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 680,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": " · upcoming development #2",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 40.664,
+    "x": 69.99999682108562,
+    "y": 336.43747965494794,
+    "w": 546.999994913737,
+    "h": 40.65624872843425
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "→ ",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "TODO",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 680,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": " · upcoming development #3",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 40.664,
+    "x": 69.99999682108562,
+    "y": 392.7187283833822,
+    "w": 546.999994913737,
+    "h": 40.65624872843425
+   },
+   {
+    "kind": "text",
+    "tag": "h3",
+    "runs": [
+     {
+      "text": "What we need to get there",
+      "size": 43.52,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 42.6496,
+    "x": 662.999979654948,
+    "y": 208.84373982747397,
+    "w": 546.9999313354492,
+    "h": 42.64062245686849
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "💸 ",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "Funding",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 680,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": " · servers, tiles and tools cost real money",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 40.664,
+    "x": 662.999979654948,
+    "y": 280.1562309265137,
+    "w": 546.9999313354492,
+    "h": 81.3124974568685
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "🛠️ ",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "Maintainers",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 680,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": " · for the tools, not only the map",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 40.664,
+    "x": 662.999979654948,
+    "y": 377.0937283833822,
+    "w": 546.9999313354492,
+    "h": 81.3124974568685
+   },
+   {
+    "kind": "text",
+    "tag": "li",
+    "runs": [
+     {
+      "text": "🤝 ",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": "Partners",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 680,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": " · universities, archives, museums",
+      "size": 31.28,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 40.664,
+    "x": 662.999979654948,
+    "y": 474.03122584025067,
+    "w": 546.9999313354492,
+    "h": 81.31256103515625
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "TODO: roadmap items with Minh.",
+      "size": 25.84,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(138, 122, 96)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 36.6928,
+    "x": 69.99999682108562,
+    "y": 586.4687919616699,
+    "w": 1139.9998982747397,
+    "h": 36.687469482421875
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 19
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "box",
+    "color": "rgb(231, 203, 205)",
+    "alpha": 1,
+    "radius": 3,
+    "border": "rgba(140, 56, 78, 0.28)",
+    "borderWidth": 1,
+    "x": 69.99999682108562,
+    "y": 414.578119913737,
+    "w": 311.2187703450521,
+    "h": 44.06248728434245
+   },
+   {
+    "kind": "box",
+    "color": "rgb(231, 203, 205)",
+    "alpha": 1,
+    "radius": 3,
+    "border": "rgba(140, 56, 78, 0.28)",
+    "borderWidth": 1,
+    "x": 390.7656033833822,
+    "y": 414.578119913737,
+    "w": 170.4843839009603,
+    "h": 44.06248728434245
+   },
+   {
+    "kind": "box",
+    "color": "rgb(231, 203, 205)",
+    "alpha": 1,
+    "radius": 3,
+    "border": "rgba(140, 56, 78, 0.28)",
+    "borderWidth": 1,
+    "x": 570.7968393961589,
+    "y": 414.578119913737,
+    "w": 217.39063262939453,
+    "h": 44.06248728434245
+   },
+   {
+    "kind": "box",
+    "color": "rgb(231, 203, 205)",
+    "alpha": 1,
+    "radius": 3,
+    "border": "rgba(140, 56, 78, 0.28)",
+    "borderWidth": 1,
+    "x": 69.99999682108562,
+    "y": 465.749994913737,
+    "w": 217.3906167348226,
+    "h": 44.06248728434245
+   },
+   {
+    "kind": "text",
+    "tag": "h3",
+    "runs": [
+     {
+      "text": "Your turn",
+      "size": 18.36,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 17.9928,
+    "x": 69.99999682108562,
+    "y": 19.01562213897705,
+    "w": 1139.9998982747397,
+    "h": 17.984378337860107
+   },
+   {
+    "kind": "text",
+    "tag": "h1",
+    "runs": [
+     {
+      "text": "History needs mappers, and supporters",
+      "size": 88.4,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 86.632,
+    "x": 69.99999682108562,
+    "y": 76.35937531789145,
+    "w": 1139.9998982747397,
+    "h": 173.25000762939453
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "Mappers:",
+      "size": 36.04,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 680,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": " map what already happened.",
+      "size": 36.04,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 36.04,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "Organizations:",
+      "size": 36.04,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 680,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": " partner with us, or fund us.",
+      "size": 36.04,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 280.5468559265137,
+    "w": 879.9999872843425,
+    "h": 102.34375
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": " ",
+      "size": 25.228,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": "  ",
+      "size": 36.04,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": " ",
+      "size": 25.228,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": "  ",
+      "size": 36.04,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": " ",
+      "size": 25.228,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": "  ",
+      "size": 36.04,
+      "family": "\"Hanken Grotesk\", system-ui, sans-serif",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": " ",
+      "size": 25.228,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 408.10937881469727,
+    "w": 879.9999872843425,
+    "h": 102.34375
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "your local history",
+      "size": 25.228,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 35.8238,
+    "x": 69.99999682108562,
+    "y": 414.578119913737,
+    "w": 311.2187703450521,
+    "h": 44.06248728434245
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "your code",
+      "size": 25.228,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 35.8238,
+    "x": 390.7656033833822,
+    "y": 414.578119913737,
+    "w": 170.4843839009603,
+    "h": 44.06248728434245
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "your archive",
+      "size": 25.228,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 35.8238,
+    "x": 570.7968393961589,
+    "y": 414.578119913737,
+    "w": 217.39063262939453,
+    "h": 44.06248728434245
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "your funding",
+      "size": 25.228,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 35.8238,
+    "x": 69.99999682108562,
+    "y": 465.749994913737,
+    "w": 217.3906167348226,
+    "h": 44.06248728434245
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 20
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "box",
+    "color": "rgb(255, 255, 255)",
+    "alpha": 1,
+    "radius": 6,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 197.56248792012533,
+    "y": 192.6406224568685,
+    "w": 230.0000031789144,
+    "h": 229.99998728434247
+   },
+   {
+    "kind": "box",
+    "color": "rgb(255, 255, 255)",
+    "alpha": 1,
+    "radius": 6,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 547.0781326293945,
+    "y": 192.6406224568685,
+    "w": 229.99998728434247,
+    "h": 229.99998728434247
+   },
+   {
+    "kind": "box",
+    "color": "rgb(255, 255, 255)",
+    "alpha": 1,
+    "radius": 6,
+    "border": "rgb(228, 222, 210)",
+    "borderWidth": 1,
+    "x": 874.5155970255535,
+    "y": 192.6406224568685,
+    "w": 230.00005086263022,
+    "h": 229.99998728434247
+   },
+   {
+    "kind": "img",
+    "src": "data:image/png;base64,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",
+    "x": 212.5624974568685,
+    "y": 207.64061609903973,
+    "w": 200,
+    "h": 200
+   },
+   {
+    "kind": "img",
+    "src": "data:image/png;base64,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",
+    "x": 562.0780944824219,
+    "y": 207.64061609903973,
+    "w": 200,
+    "h": 200
+   },
+   {
+    "kind": "img",
+    "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAKFUlEQVR4AeydwY7cRgxEB3tPDgmQ/P/n5ZCLf8AxA9gezw5LUqlb6m6+IEp2miJZfNzCIH1wPv7647evMz9fG/+lWKhWKq9HzNWi8lrHesx9dc2PB39BAAIpAQySoiEAgccDg/BbAAFBAIMIOIQg0NEgwIXA/ARSg/zz75fHKI+L+e8/f39kj1vTyXM5Or0iR/XLeMR55F71KI1Xx9TMqUFUEjEIVCGAQapsmjktAhjEwkZSFQJzGqTKdpjzdgIY5PYVIGBkAhhk5O2g7XYClkHiSrD1czWJTL+6YlQa3bxMR5yrmhHPHqVTxbJ66lzVc2OqnxtztVgGcZuRB4HZCGCQl43xEQLPBDDIMw1+hsALAQzyAoSPEHgmgEGeafAzBF4IYJAXIHyEwDMBDPJM49vP7jWiyvtWNv4+/Kia7hWwyjsssEACBimwZEb0CWAQnx2ZBQhgkAJLZkSfAAbx2ZFZgAAGWWLJDNGLAAbpRZa6SxBY2iBXXmmqXuq6tsdvUWstql4P/SPVXNogI4FGy5wEMMice0P1RQQwyEWgp21TXDgGKf4LwPiaAAbRfIgWJ4BBiv8CML4mYBlEXfu5MS2zZlSx7HF1nPW7mn6m48y5O4NlELcZeRB4JjDDzxhkhi2h8TYCGOQ29DSegQAGmWFLaLyNAAa5DT2NZyCAQWbYEhqPEmj2fmoQdY14dcydVunMrgxVrywnzp1ekaf6jRJTs7kaVc2rY2qG1CAqiRgEqhDAIFU2zZwWAQxiYSOpCgEMUmXTzGkR+GwQqwxJEFiTAAZZc69M1YjAR1w1zvw04rCrjLp+VAzdPCVK9XPzMp2qnoopjbPE+AZRGyZWngAGKf8rAABF4FKDKCHEIDAiAQwy4lbQNAwBDDLMKhAyIgEMMuJW0DQMgY/WV3s9Jss0xrnbL3LfPaqeupp0895p2HOm+ql8lZfNp3JULxVTNVVM1XRjqt8q3yBqRmIQsAlgEBsdiRUIYJAKW2ZGmwAGsdGRWIEABqmwZWa0CWCQTXS8UJlAahB1ZaaAuXmqZnb9GOcqz4lFzezpMZvSmOmIczdPzZDF3F6hM3tUzUxHnGf14lzVdGOpQdyC5EFgJQIYZKVtMktzAhikOVIKrkQAg9y5TXoPTwCDDL8iBN5JIDVI3ApkT9wmZI8aJsvpdZ7pV+dKf49YDy2Kp+rnxBQTpUPFVE0Vc/RHjqqZGkQlEYNAFQIYpMqmmdMigEEsbOMnobANAQzShiNVFiWAQRZdLGO1IYBB2nCkyqIE0j96VM0bV2PO06Om0uFcJTo5aq6tmOrnxhQTpSfr5+RELVeHyou62aN0ujG+QVxydfNKTY5BSq2bYY8SwCBHifF+KQIYpNS6GfYoAQxylBjvlyKAQUqte/Rhx9M3hUGya704V0jVdWGW5+RErdDiPJGbPUqLimX1epwrHYqHq0X1c2sqnVMYxB2cPAicJYBBzhIkf2kCGGTp9TLcWQIY5CxB8ucgYKrEICY40moQwCA19syUJoH0/zClrr5ULzdP1VRXe6qfiql+WUzpULGs3h3nrZn0mKGHRrcm3yA9NkzNZQhgkGVWySA9COwxSI++1ITAFAQwyBRrQuRdBDDIXeTpOwUBDDLFmhB5F4HUIOra0r0yU0OqmiqmdKpYpkX1cmNZr63zHv0Ukyy2pdOJZ73iXNVzmURd50kNokS2i1EJAmMTwCBj7wd1NxPAIDcvgPZjE8AgY+8HdTcTwCA3L4D2YxNY1yBjc0fdJASsP5tXzaau0lSeiqma6tpP1cxiqpeKZfXOnF/dL9OqGKuY0q/yMh1xrmpG3HmUFr5BHKLklCGAQcqsmkEdAhjEoUZOGQIYxFg1KXUIYJA6u2ZSgwAGMaCRUodA+oc2KATuVZvKUzF1Dad0qrzWMaVDzabylEZVU+Wpfk5M6XDqRY6q2WM21Y9vkNgIDwQSAhgkAXPTMW0HI4BBBlsIcsYigEHG2gdqBiOAQQZbCHLGIoBBxtoHagYjkBrEvU5TeW5MXcNdGeuxO1e/Yvm+5pdHnKsZspqRlz1Ovejj5mU64tytGXqyJzWIakYMAlUIYJAqm2ZOiwAGsbCRVIUABqmyaea0CGAQCxtJvxBY+AMGWXi5jHaegGWQ7Eoszs9L+lwh6jrP50o/T7J6P9849lNcM2ZP1mvr/JiCfW+rnlkFlaNiGY8z5z36ZXPHuWWQSOSBQAUCGKTClpnRJoBBbHQkXkHg7h4Y5O4N0H9oAhhk6PUg7m4CGOTuDdB/aAKpQdRVnDuRqtkjpq4E3RmcPDWbqtdDv6NF5ahYj9ncfkqLqpkaRBUkBoEFCOwaAYPswsRLVQlgkKqbZ+5dBDDILky8VJUABqm6eebeRcAyiPqvfhXbpejNS+o2R8XelPpxlOn88cJFP2Q6zpwrJiqW9VQ5bkzhVTXdPFVTxSyDPJRKYhBYiAAGWWiZjNKeAAZpz5SKCxHAIAstk1HaE8Ag7ZlScSECwxlkIbaMsgCBj+xqb6TZMo1b52oGdbWXxVQ/t5fKU7FMY5yrPBWL3HePylFM3Jjq907f9zO3n8rjG0Rtg1h5Ahik/K8AABQBDKLoECtPoJJByi8bAMcJYJDjzMgoRACDFFo2ox4n8PH9imzWf6uR1fWdE1OMlA4VUzVVTOlX/dw8VTOLKf1ZzpnzHv34BjmzEXKXJ4BBmqyYIqsSwCCrbpa5mhDAIE0wUmRVAhhk1c0yVxMCGKQJRoqsSiA1iLoOvDrWA766EsxiPXQolv/3S/6RaYxzVTPi2ZPlJRI2j7N6cb6ZnLwQuc6Tzbx1nhok0ccxBEoRwCCl1s2wRwlgkKPEeL8UAQxSat0Me5QABjlKbKH3GWWbAAbZZsQbhQlYBtm6GnPio+zAuUKMnKv1R8/sUVqynDjP9qbqZTlnzt1+Ki/mcx7LIEoIMQisRACDrLRNZmlOAIM0R0rBx+OxDAQMsswqGaQHAQzSgyo1lyGAQZZZJYP0IIBBelB9qamuF19e3f1RXaOqIk6eq1/luTF3Nmfu6IVBggLPRASulYpBruVNt8kIYJDJFobcawlgkGt5020yAhhksoUh91oCGORa3nQbmcAbbRjkBYq6DnRjLy1++ahq/vJiow/qejVr4WpUeW4s09jrHIP0IkvdJQhgkCXWyBC9CGCQXmSpuwQBDLLEGhmiF4FWBumlj7oQuJUABrkVP81HJ2AZRF0VurHRQYU+NVvEnUfVdGNKh7pedfqpXqpejzy3pmJiGUQJIQaBlQhgkJW2ySzNCUxgkOYzUxACuwlgkN2oeLEiAQxScevMvJsABtmNihcrEkgNoq6+ro65i1E6nZqqnrrSVHlKR488pVNpyWJuPZXnzp1p3DpXWlKDbBVdIs4QENgggEE2ABGuTQCD1N4/028QwCAbgAjXJoBBau+f6TcIYJANQG6YvDUI/AcAAP//iK7/3QAAAAZJREFUAwDP/OUICUCQEQAAAABJRU5ErkJggg==",
+    "x": 889.5156224568685,
+    "y": 207.64061609903973,
+    "w": 199.9998728434245,
+    "h": 200
+   },
+   {
+    "kind": "text",
+    "tag": "h3",
+    "runs": [
+     {
+      "text": "Thank you · Happy mapping!",
+      "size": 18.36,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 17.9928,
+    "x": 69.99999682108562,
+    "y": 19.01562213897705,
+    "w": 1139.9998982747397,
+    "h": 17.984378337860107
+   },
+   {
+    "kind": "text",
+    "tag": "h1",
+    "runs": [
+     {
+      "text": "Let's keep history alive",
+      "size": 85,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 83.3,
+    "x": 69.99999682108562,
+    "y": 75.34375190734863,
+    "w": 1139.9998982747397,
+    "h": 83.29687118530273
+   },
+   {
+    "kind": "text",
+    "tag": "span",
+    "runs": [
+     {
+      "text": "The map",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "openhistoricalmap.org",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 30.6,
+    "x": 175.46874682108563,
+    "y": 443.0312474568685,
+    "w": 274.1874694824219,
+    "h": 61.2187385559082
+   },
+   {
+    "kind": "text",
+    "tag": "span",
+    "runs": [
+     {
+      "text": "Donate",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "none"
+     },
+     {
+      "text": " · via OSM US",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "we run on donations",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 30.6,
+    "x": 538.0468368530273,
+    "y": 443.0312474568685,
+    "w": 248.07815551757812,
+    "h": 61.2187385559082
+   },
+   {
+    "kind": "text",
+    "tag": "span",
+    "runs": [
+     {
+      "text": "These slides",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "\n",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "TODO: deck URL",
+      "size": 20.4,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 30.6,
+    "x": 898.1093724568685,
+    "y": 443.0312474568685,
+    "w": 182.79685974121094,
+    "h": 61.2187385559082
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": "Minh Nguyễn · ",
+      "size": 21.08,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "1ec5",
+      "size": 21.08,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     },
+     {
+      "text": " · Ruben Lopez Mendoza · ",
+      "size": 21.08,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 380,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     },
+     {
+      "text": "Rub21",
+      "size": 21.08,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 35.836,
+    "x": 69.99999682108562,
+    "y": 527.4374961853027,
+    "w": 1139.9998982747397,
+    "h": 35.828145345052086
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 21
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "text",
+    "tag": "h3",
+    "runs": [
+     {
+      "text": "Backup",
+      "size": 18.36,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(140, 56, 78)",
+      "transform": "uppercase"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 17.9928,
+    "x": 69.99999682108562,
+    "y": 19.01562213897705,
+    "w": 1139.9998982747397,
+    "h": 17.984378337860107
+   },
+   {
+    "kind": "text",
+    "tag": "h2",
+    "runs": [
+     {
+      "text": "Extra slides, if the questions go there",
+      "size": 65.28,
+      "family": "Fraunces, Georgia, serif",
+      "weight": 560,
+      "italic": false,
+      "color": "rgb(33, 27, 19)",
+      "transform": "none"
+     }
+    ],
+    "align": "left",
+    "lineHeight": 63.9744,
+    "x": 69.99999682108562,
+    "y": 62.890625,
+    "w": 1139.9998982747397,
+    "h": 63.968753814697266
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 22
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/tour/04-api.png",
+    "x": 92.81249841054282,
+    "y": 0,
+    "w": 1094.3592071533203,
+    "h": 618.999989827474
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": " ",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 649.625047047933,
+    "w": 1139.9998982747397,
+    "h": 51.171875
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "overpass-api.openhistoricalmap.org",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.7296,
+    "x": 404.5312563578288,
+    "y": 664.6250089009603,
+    "w": 470.937442779541,
+    "h": 28.999964396158855
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 23
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/tour/05-wiki.png",
+    "x": 157.98436800638837,
+    "y": 0,
+    "w": 964.0313466389974,
+    "h": 619.9999491373699
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": " ",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 650.6250063578289,
+    "w": 1139.9998982747397,
+    "h": 51.171875
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "osm.wiki/OHM/Overpass",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.7296,
+    "x": 494.56249872843426,
+    "y": 665.6249682108562,
+    "w": 290.8749580383301,
+    "h": 29.000027974446617
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 24
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/tour/08-vtiles.png",
+    "x": 175.1406192779541,
+    "y": 0,
+    "w": 929.7030766805013,
+    "h": 619.9999491373699
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": " ",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 650.6250063578289,
+    "w": 1139.9998982747397,
+    "h": 51.171875
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "vtiles.openhistoricalmap.org",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.7296,
+    "x": 446.07810974121094,
+    "y": 665.6249682108562,
+    "w": 387.82812754313153,
+    "h": 29.000027974446617
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 25
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/tour/09-boundaries.png",
+    "x": 157.98436800638837,
+    "y": 0,
+    "w": 964.0313466389974,
+    "h": 619.9999491373699
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": " ",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 650.6250063578289,
+    "w": 1139.9998982747397,
+    "h": 51.171875
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "danvk.org/ohm",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.7296,
+    "x": 549.9687194824219,
+    "y": 665.6249682108562,
+    "w": 180.06248474121094,
+    "h": 29.000027974446617
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 26
+ },
+ {
+  "W": 1280,
+  "H": 720,
+  "bgImage": null,
+  "items": [
+   {
+    "kind": "img",
+    "src": "assets/tour/10-planetstats.png",
+    "x": 157.98436800638837,
+    "y": 0,
+    "w": 964.0313466389974,
+    "h": 619.9999491373699
+   },
+   {
+    "kind": "text",
+    "tag": "p",
+    "runs": [
+     {
+      "text": " ",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 51.1768,
+    "x": 69.99999682108562,
+    "y": 650.6250063578289,
+    "w": 1139.9998982747397,
+    "h": 51.171875
+   },
+   {
+    "kind": "text",
+    "tag": "code",
+    "runs": [
+     {
+      "text": "planet-stats.openhistoricalmap.org",
+      "size": 22.3448,
+      "family": "\"IBM Plex Mono\", ui-monospace, monospace",
+      "weight": 600,
+      "italic": false,
+      "color": "rgb(87, 75, 57)",
+      "transform": "none"
+     }
+    ],
+    "align": "center",
+    "lineHeight": 31.7296,
+    "x": 404.5312563578288,
+    "y": 665.6249682108562,
+    "w": 470.937442779541,
+    "h": 29.000027974446617
+   }
+  ],
+  "bgColor": "rgb(255, 255, 255)",
+  "index": 27
+ }
+]

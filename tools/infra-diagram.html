@@ -1,0 +1,161 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>OHM infrastructure diagram</title>
+<style>
+  @font-face { font-family:'Fraunces'; src:url('../fonts/fraunces-wght.woff2') format('woff2'); font-weight:100 900; }
+  @font-face { font-family:'Hanken Grotesk'; src:url('../fonts/hanken-wght.woff2') format('woff2'); font-weight:100 900; }
+  @font-face { font-family:'IBM Plex Mono'; src:url('../fonts/plexmono-400.woff2') format('woff2'); font-weight:400; }
+  @font-face { font-family:'IBM Plex Mono'; src:url('../fonts/plexmono-600.woff2') format('woff2'); font-weight:600; }
+
+  :root{
+    --ink:#211B13; --ink-soft:#574B39; --ink-faint:#8A7A60;
+    --rosa:#BC6076; --rosa-deep:#8C384E; --rosa-tint:#E7CBCD;
+    --teal:#2C8A7B; --teal-deep:#1C5E54;
+    --edge:#E4DED2; --paper2:#FAF8F4;
+  }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:#fff; font-family:'Hanken Grotesk',system-ui,sans-serif; color:var(--ink); }
+
+  #sheet{ width:1280px; padding:26px 30px 22px; }
+
+  .row{ display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+
+  .cluster{ border:1px solid var(--edge); border-radius:8px; padding:16px 16px 14px; background:#fff; }
+  .cluster.k3s{ border-color:var(--rosa-tint); }
+  .cluster > header{ display:flex; align-items:baseline; gap:10px; margin-bottom:12px; }
+  .cluster h2{
+    font-family:'Fraunces',Georgia,serif; font-size:21px; font-weight:600; margin:0; letter-spacing:-.01em;
+  }
+  .cluster .what{ font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); letter-spacing:.04em; }
+
+  .nodes{ display:grid; gap:10px; }
+  .node{ border:1px solid var(--edge); border-radius:6px; background:var(--paper2); padding:10px 12px 11px; }
+  .node .label{
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:600; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--teal-deep); display:flex; align-items:center; gap:7px; margin-bottom:8px;
+  }
+  .k3s .node .label{ color:var(--rosa-deep); }
+  .label::before{ content:''; width:9px; height:9px; border-radius:2px; background:var(--teal); flex:none; }
+  .k3s .label::before{ background:var(--rosa); }
+
+  .pods{ display:flex; flex-wrap:wrap; gap:6px; }
+  .pod{
+    font-family:'IBM Plex Mono',monospace; font-size:11px; line-height:1;
+    padding:6px 9px; border-radius:4px; background:#fff; border:1px solid var(--edge); color:var(--ink-soft);
+  }
+  .pod b{ color:var(--ink); font-weight:600; }
+  .pod.db{ border-color:#CFE3DE; background:#F2F9F7; }
+  .pod.job{ border-style:dashed; }
+
+  .strip{
+    margin-top:20px; border-top:1px solid var(--edge); padding-top:14px;
+    display:grid; grid-template-columns:repeat(3,1fr); gap:22px;
+  }
+  .strip h3{
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px; font-weight:600; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--rosa); margin:0 0 5px;
+  }
+  .strip p{ margin:0; font-size:13.5px; line-height:1.45; color:var(--ink-soft); }
+  .strip code{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--ink); }
+
+  .foot{
+    margin-top:14px; font-family:'IBM Plex Mono',monospace; font-size:11px;
+    color:var(--ink-faint); letter-spacing:.03em;
+  }
+</style>
+
+<div id="sheet">
+  <div class="row">
+
+    <section class="cluster">
+      <header>
+        <h2>The map</h2>
+        <span class="what">AWS EKS · helm chart osm-seed</span>
+      </header>
+      <div class="nodes">
+        <div class="node">
+          <div class="label">api_db_xlarge</div>
+          <div class="pods">
+            <span class="pod db"><b>db</b> · PostgreSQL + PostGIS · 600 Gi</span>
+          </div>
+        </div>
+        <div class="node">
+          <div class="label">web_medium · web_helpers_medium</div>
+          <div class="pods">
+            <span class="pod"><b>web</b> · Rails, iD, time slider</span>
+            <span class="pod"><b>cgimap</b> · read API</span>
+          </div>
+        </div>
+        <div class="node">
+          <div class="label">utils</div>
+          <div class="pods">
+            <span class="pod"><b>memcached</b></span>
+            <span class="pod"><b>tm-api</b> + <b>tm-db</b></span>
+            <span class="pod"><b>replication</b> · minute diffs</span>
+          </div>
+        </div>
+        <div class="node">
+          <div class="label">job · job_xlarge</div>
+          <div class="pods">
+            <span class="pod job"><b>planet-dump</b></span>
+            <span class="pod job"><b>full-history</b></span>
+            <span class="pod job"><b>changesets-dump</b></span>
+            <span class="pod job"><b>db-backup</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cluster k3s">
+      <header>
+        <h2>The tools</h2>
+        <span class="what">k3s cluster · same chart, other values</span>
+      </header>
+      <div class="nodes">
+        <div class="node">
+          <div class="label">tiles</div>
+          <div class="pods">
+            <span class="pod db"><b>tiler-db</b> + <b>imposm</b></span>
+            <span class="pod"><b>martin</b> · vector tiles</span>
+            <span class="pod"><b>varnish</b> + <b>cache</b></span>
+          </div>
+        </div>
+        <div class="node">
+          <div class="label">search &amp; queries</div>
+          <div class="pods">
+            <span class="pod"><b>overpass-api</b></span>
+            <span class="pod"><b>nominatim</b> · api + ui</span>
+            <span class="pod"><b>taginfo</b> · web + processor</span>
+          </div>
+        </div>
+        <div class="node">
+          <div class="label">review &amp; stats</div>
+          <div class="pods">
+            <span class="pod"><b>osmcha</b> · web + api + db</span>
+            <span class="pod"><b>adiff-builder</b></span>
+            <span class="pod"><b>planet-stats</b></span>
+            <span class="pod"><b>level0</b></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="strip">
+    <div>
+      <h3>Storage</h3>
+      <p>Planet files, changeset dumps and the tile cache live in <code>S3</code>. The database keeps a 600 Gi volume.</p>
+    </div>
+    <div>
+      <h3>Deploys</h3>
+      <p>GitHub Actions builds the images into <code>ghcr.io</code> and rolls out the Helm chart. One command, no manual servers.</p>
+    </div>
+    <div>
+      <h3>Who runs it</h3>
+      <p>Volunteers. Everything you see here is code in <code>OpenHistoricalMap/ohm-deploy</code>, open like the data.</p>
+    </div>
+  </div>
+
+  <div class="foot">github.com/OpenHistoricalMap/ohm-deploy · production values, August 2026</div>
+</div>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>State of OpenHistoricalMap · SotM 2026</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+
+<!-- Todas las slides viven en slides.md. Este archivo solo arma el deck. -->
+<div class="reveal">
+  <div class="slides">
+    <section data-markdown="slides.md"
+             data-separator="^\r?\n---\r?\n$"
+             data-separator-notes="^Note:"></section>
+  </div>
+</div>
+
+<!-- Fixed chrome: map-sheet frame -->
+<div class="deck-chrome">
+  <div class="frame"></div>
+  <span class="tick tl"></span><span class="tick tr"></span>
+  <span class="tick bl"></span><span class="tick br"></span>
+  <span class="meta tr">48.8395°N · 2.5876°E</span>
+  <span class="meta bl">State of the Map · 2026</span>
+  <span class="meta br">Paris · Aug 2026</span>
+</div>
+
+<!-- Descarga del PDF (lo genera el workflow de deploy con decktape) -->
+<a class="pdf-btn" href="sotm-ohm-2026.pdf" download title="Download these slides as PDF">↓ PDF</a>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+<script src="vendor/qrcode.min.js"></script>
+<script>
+  Reveal.initialize({
+    width: 1280, height: 720, margin: 0.04,
+    minScale: 0.2, maxScale: 1.8,
+    hash: true, slideNumber: 'c/t', center: false,
+    transition: 'fade', transitionSpeed: 'default',
+    controlsTutorial: false,
+    markdown: { breaks: true },
+    plugins: [ RevealNotes, RevealMarkdown ]
+  }).then(function () {
+    // Las slides vienen de slides.md, así que todo esto corre después de renderizar.
+
+    // El export a PDF congela los GIF en su primer frame, que en varios casos está casi vacío.
+    // Al exportar usamos un frame representativo (assets/posters) en su lugar.
+    // ?print-pdf = imprimir desde el navegador · ?poster = decktape en el workflow de deploy.
+    if (/[?&](print-pdf|poster)\b/.test(window.location.search)) {
+      document.documentElement.classList.add('exporting');
+      document.querySelectorAll('[data-poster]').forEach(function (el) {
+        if (el.tagName === 'IMG') el.src = el.dataset.poster;
+        else el.setAttribute('data-background-image', el.dataset.poster);
+      });
+      Reveal.sync();
+    }
+
+    qr('qr', 'https://www.openhistoricalmap.org/');
+    qr('qr-donate', 'https://openstreetmap.app.neoncrm.com/forms/ohm');
+    qr('qr-deck', 'https://sotm-ohm-2026.pages.dev');
+  });
+
+  function qr(id, url) {
+    var el = document.getElementById(id);
+    if (!el) return console.warn('QR container not found:', id);
+    try {
+      new QRCode(el, {
+        text: url, width: 200, height: 200,
+        colorDark: '#16120D', colorLight: '#ffffff',
+        correctLevel: QRCode.CorrectLevel.M
+      });
+    } catch (e) { console.warn('QR not generated:', id, e); }
+  }
+</script>
+</body>
+</html>
